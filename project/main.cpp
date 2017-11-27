@@ -59,6 +59,5 @@ int main(int argc, char* argv[]) {
 	}
 	else std::cout << "Not enough arguments\n";
 	
-	system("pause");
 	return 0;
 }
