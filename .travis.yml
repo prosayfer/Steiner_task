@@ -1,0 +1,30 @@
+language: generic
+matrix:
+  include:
+    - os: linux
+      sudo: required
+      env: COMPILER_NAME=gcc CXX=g++-5 CC=gcc-5
+      addons:
+        apt:
+          packages:
+            - g++-5
+            - cmake
+          sources: &sources
+            - llvm-toolchain-precise
+            - ubuntu-toolchain-r-test
+    - os: linux
+      sudo: required
+      env: COMPILER_NAME=gcc CXX=g++-4.9 CC=gcc-4.9
+      addons:
+        apt:
+          packages:
+            - g++-4.9
+            - cmake
+          sources: &sources
+            - llvm-toolchain-precise
+            - ubuntu-toolchain-r-test
+ 
+script:
+  - mkdir build
+  - cd build
+  - cmake .. && make
