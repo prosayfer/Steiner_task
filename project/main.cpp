@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
 				if (!(input >> str)) throw std::invalid_argument("Not enough arguments\n");
 
 				if (check_if_integer(str)) {
-					Object obj(x, stoi(str), 'O');
+					Object obj(x, stoi(str), obj_type::object);
 					Map.insert({ obj, false });
 				}
 				else throw std::invalid_argument("Numbers must be unsigned int\n");
