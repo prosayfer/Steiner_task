@@ -50,12 +50,10 @@ const_map_it Object::find_nearest(std::multimap<const Object, bool>& Map, const_
 	else
 		right_distance = (x_ - right_pair->first.x_) + (y_ - right_pair->first.y_);
 
-	if (left_distance <= right_distance) {
+	if (left_distance <= right_distance) 
 		return left_pair;
-	}
-	else {
+	else 
 		return right_pair;
-	}
 }
 
 
