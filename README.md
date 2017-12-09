@@ -1,5 +1,6 @@
 # Steiner_task
 [![Build Status](https://travis-ci.org/KonstantinPronin/Steiner_task.svg?branch=master)](https://travis-ci.org/KonstantinPronin/Steiner_task)
+
 Формулировка задания:
 
 Пусть на некоторой местности расположено несколько объектов, между
