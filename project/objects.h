@@ -20,7 +20,7 @@ public:
 	obj_type return_type() const noexcept { return type_; }
 
 	//std::pair<const Object, bool> find_nearest(std::multimap<const Object, bool>& Map) const noexcept;
-	const_map_it Object::find_nearest(std::multimap<const Object, bool>& Map, const_map_it left, const_map_it right) const noexcept;
+	const_map_it find_nearest(std::multimap<const Object, bool>& Map, const_map_it left, const_map_it right) const noexcept;
 	bool operator< (const Object& B) const noexcept;
 	
 	~Object() = default;
