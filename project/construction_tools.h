@@ -7,8 +7,6 @@ bool construct(std::multimap<const Object, bool>& Map) noexcept {
 	it->second = true;
 	++it;
 
-	size_t counter(0);
-	
 	while (it != Map.end()){
 		if (!it->second) {
 			
@@ -49,7 +47,6 @@ bool construct(std::multimap<const Object, bool>& Map) noexcept {
 			it->second = true;
 		}
 		++it;
-		++counter;
 	}
 	return true;
 }
